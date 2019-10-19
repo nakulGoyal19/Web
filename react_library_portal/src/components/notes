@@ -1,0 +1,3 @@
+install yarn
+create-react-app foldername
+yarn add bootstrap

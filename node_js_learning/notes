@@ -1,0 +1,14 @@
+npm init ->innitialize nodeJs project , create package.json file
+npm install express 
+code .
+npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/node -> to install babel -> it converts ES6 code to ES5
+npm install --save-dev nodemon -> to install nodemon - node monitor
+create .babelrc file
+start in scripts in package.json file
+npm run start -> to execute main file
+
+npm update -> to update packages
+build,update ->add in scripts in package.json as "npm update
+
+type in cmd -> npm run build
+"npm run" look for scripts tag and run that command and execute "npm update"
