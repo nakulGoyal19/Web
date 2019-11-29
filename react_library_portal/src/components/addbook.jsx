@@ -43,12 +43,11 @@ export default class AddBook extends Component{
                         className="form-control mt-2"
                         name="version"
                         onChange={this.handleChange}
-                        defaultValue={"1.0.0"}
                     />
                     <button className="col btn btn-primary mt-2">Add</button>
                     </div>
                 </form>
-                <button onClick={()=>this.props.back()}>Back to Main Page</button>
+                <button className="btn btn-dark" onClick={()=>this.props.back()}>Back to Main Page</button>
             </center></div>
           )
     }

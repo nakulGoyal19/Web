@@ -8,7 +8,7 @@ export default class App extends Component{
   {
     return(
       <div>
-        <Route exact path='/' render={()=><Title/>}></Route>
+        <Route exact path='/' render={()=><Title />}></Route>
         <Route exact path='/main' render={()=><Main/>}></Route>
       </div>
     )

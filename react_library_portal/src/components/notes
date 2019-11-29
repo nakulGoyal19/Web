@@ -4,3 +4,13 @@ yarn add bootstrap
 
 npm install --save react-router-dom
 yarn add react router dom
+
+
+in any other folder
+
+npm install -g json-server
+create db.json file
+json-server --watch db.json
+
+postman get post
+Content-type   application.json

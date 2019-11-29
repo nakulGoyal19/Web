@@ -6,6 +6,7 @@ export default class RecentBooksList extends Component{
     {
         if(this.props.display==='mainpage'){
         return(
+            <>
             <table className="table table-bordered">
                 <thead>
                     <tr>
@@ -22,15 +23,16 @@ export default class RecentBooksList extends Component{
                                 <td>{book.name}</td>
                                 <td>{book.author}</td>
                                 <td>{book.version}</td>
-                                <td><button onClick={()=>this.props.remove(book)}>Remove</button></td>
+                                <td><button className="btn btn-danger" onClick={()=>this.props.remove(book.id)}>Remove</button></td>
                             </tr>)
                         })
                     }
-                    <tr>
-                        <td colSpan={4} ><button onClick={()=>this.props.add()}>Add a book</button></td>
-                    </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+                <div style={{textAlign: "center"}}>
+                        <button className="btn btn-outline-primary" style={{margin: 'auto', width: '300px'}} onClick={()=>this.props.add()}>Add a book</button>
+                </div>
+                        </>
         )}
         if(this.props.display==='addbook'){
             return <AddBook back={this.props.back} addAndBack={this.props.addAndBack}/>
